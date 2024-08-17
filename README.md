@@ -657,7 +657,7 @@ import pynumsys as pns
 a = "73"
 b = "4A"
 
-print(oct_sub(a, b, output="octal"))
+print(hex_sub(a, b, output="octal"))
 ```
 
 ## Hexadecimal Multiplication:
