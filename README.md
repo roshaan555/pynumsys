@@ -148,51 +148,165 @@ print(bin_to_div(bin_str1, bin_str2))
 2) **Decimal to Octal**
 3) **Decimal to Hexadecimal**
 
-## Binary to Decimal:
-It is a function that converts binary to decimal from binary string input.
+## Decimal to Binary:
+It is a function that converts decimal to binary from decimal number.
 
 **Example:**
 
 ```py
 import pynumsys as pns
 
-bin_str = "1110011"
-print(bin_to_dec(bin_str))
+dec_num = 115
+print(dec_to_bin(dec_num))
 ```
 
 **Output:**
 
-115
+1110011
 
-## Binary to Octal:
+## Decimal to Octal:
+It is a function that converts decimal to octal from decimal number.
 
 **Example:**
 
 ```py
 import pynumsys as pns
 
-bin_str = "1110011"
-print(bin_to_oct(bin_str))
+dec_num = 115
+print(dec_to_oct(dec_num))
 ```
 
 **Output:**
 
 163
 
-## Binary to Hexadecimal:
+## Decimal to Hexadecimal:
+It is a function that converts decimal to hexadecimal from decimal number.
 
 **Example:**
 
 ```py
 import pynumsys as pns
 
-bin_str = "1110011"
-print(bin_to_hex(bin_str))
+dec_num = 115
+print(dec_to_hex(dec_num))
 ```
 
 **Output:**
 
 73
+
+# Octal Conversions:
+
+1) **Octal to Binary**
+2) **Octal to Decimal**
+3) **Octal to Hexadecimal**
+
+# Octal Operations:
+1) **Octal Addition**
+2) **Octal Subtraction:**
+3) **Octal Multiplication:**
+4) **Octal Division**
+
+## Octal to Binary:
+It is a function that converts octal to binary from octal input string.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+oct_str = "163"
+print(oct_to_bin(oct_str))
+```
+
+**Output:**
+
+1110011
+
+## Octal to Decimal:
+It is a function that converts octal to decimal from octal input string.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+oct_str = "163"
+print(oct_to_dec(dec_num))
+```
+
+**Output:**
+
+115
+
+## Octal to Hexadecimal:
+It is a function that converts octal to hexadecimal from octal input string.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+oct_str = "163"
+print(oct_to_hex(bin_str))
+```
+
+**Output:**
+
+73
+
+## Octal Addition:
+It is a function which returns addition of two octal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter if for getting output
+in another number systems by defualt the output is in octal.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b))
+```
+
+**Output in octal:**
+
+333
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, output="decimal"))
+```
+
+**Output in hexadecimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, output="hexa"))
+```
 
 For more examples see [Examples](https://github.com/roshaan555/pynumsys/blob/main/Examples "Examples of funcions of pynumsys").
 
