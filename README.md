@@ -18,7 +18,7 @@ pip install --upgrade pynumsys
 2) **Binary to Octal**
 3) **Binary to Hexadecimal**
 
-# Binary Operations:
+# Basic Binary Operations:
 1) **Binary Addition**
 2) **Binary Subtraction**
 3) **Binary Multiplication**
@@ -70,7 +70,10 @@ print(bin_to_hex(bin_str))
 
 73
 
-# Binary Operations:
+# Basic Binary Operations:
+Binary operations are the operations that are performed on two inputs. Some fundamental binary operations are **addition**, **subtraction**, **multiplication**, and **division**. The inputs are known as the operands. Binary operations also have several properties like closure property, associative property, commutative property, identity element, and inverse element.
+
+This package or library perform basic operations on binary such as **binary addition**, **binary subtraction**, **binary multiplication** and **binary division**
 
 ## Binary Addition:
 It is a function which returns addition of two binary numbers.
@@ -204,7 +207,7 @@ print(dec_to_hex(dec_num))
 2) **Octal to Decimal**
 3) **Octal to Hexadecimal**
 
-# Octal Operations:
+# Basic Octal Operations:
 1) **Octal Addition**
 2) **Octal Subtraction:**
 3) **Octal Multiplication:**
@@ -258,7 +261,11 @@ print(oct_to_hex(bin_str))
 
 73
 
-# Octal Operations:
+# Basic Octal Operations:
+Octal operations are mathematical operations that use the octal number system, which has a base of eight and uses numbers from 0 to 7. Basic 
+operations of octal are: **octal addition**, **octal subtraction**, **octal multiplication**, and **octal division**.
+
+This package or library perform basic operations on octal such as **octal addition**, **octal subtraction**, **octal multiplication** and **octal division**.
 
 ## Octal Addition:
 It is a function which returns addition of two octal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter if for getting output
@@ -483,6 +490,295 @@ print(oct_div(a, b, quot=True))
 **Output:**
 
 (1, 13)
+
+# Hexadecimal Conversions:
+
+1) **Hexadecimal to Binary**
+2) **Hexadecimal to Decimal**
+3) **Hexadecimal to Octal**
+
+# Basic Hexadecimal Operations:
+1) **Hexadecimal Addition**
+2) **Hexadecimal Subtraction:**
+3) **Hexadecimal Multiplication:**
+4) **Hexadecimal Division**
+
+## Hexadecimal to Binary:
+It is a function that converts hexadecimal to binary from hexadecimal input string.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+oct_str = "73"
+print(hex_to_bin(oct_str))
+```
+
+**Output:**
+
+1110011
+
+## Hexadecimal to Decimal:
+It is a function that converts hexadecimal to decimal from hexadecimal input string.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+hex_str = "73"
+print(hex_to_dec(hex_str))
+```
+
+**Output:**
+
+115
+
+## Hexadecimal to Octal:
+It is a function that converts octal to hexadecimal from octal input string.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+hex_str = "73"
+print(hex_to_oct(bin_str))
+```
+
+**Output:**
+
+163
+
+# Basic Hexadecimal Operations:
+Hexadecimal operations are arithmetic computations performed using hexadecimal numbers.
+
+This package or library perform basic operations on octal such as **hexadecimal addition**, **hexadecimal subtraction**, **hexadecimal multiplication** and **hexadecimal division**.
+
+## Hexadecimal Addition:
+It is a function which returns addition of two hexadecimal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter if for getting output
+in another number systems by defualt the output is in hexadecimal.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_add(a, b))
+```
+
+**Output in hexadecimal:**
+
+BD
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_add(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_add(a, b, output="decimal"))
+```
+
+**Output in octal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_add(a, b, output="octal"))
+```
+
+## Hexadecimal Subtraction:
+It is a function which returns subtraction of two hexadecimal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter for getting output
+in another number systems, by defualt the output is in hexadecimal.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_sub(a, b))
+```
+
+**Output in hexadecimal:**
+
+29
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(hex_sub(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_sub(a, b, output="decimal"))
+```
+
+**Output in octal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(oct_sub(a, b, output="octal"))
+```
+
+## Hexadecimal Multiplication:
+It is a function which returns multiplication of two hexadecimal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter if for getting output
+in another number systems by defualt the output is in hexadecimal.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_mul(a, b))
+```
+
+**Output in hexadecimal:**
+
+213E
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_mul(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_mul(a, b, output="decimal"))
+```
+
+**Output in octal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_mul(a, b, output="octal"))
+```
+
+## Hexadecimal Division:
+It is a function which returns division of two hexadecimal numbers. It has four parameters **a**, **b**, **output** and **quot**. **Output** parameter for getting output
+in another number systems by defualt the output is in hexadecimal and **quot** is a boolean parameter for getting quotient with remainder together in a tuple, naturally
+this functions returns remainder only due to its defualt **quot** value **False** but if you want quoteint with remainder you can pass it **quot=True**.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(oct_div(a, b))
+```
+
+**Output in octal:**
+
+29
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_div(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_div(a, b, output="decimal"))
+```
+
+**Output in octal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(hex_div(a, b, output="octal"))
+```
+
+**With quot=True:**
+
+```py
+import pynumsys as pns
+
+a = "73"
+b = "4A"
+
+print(hex_div(a, b, quot=True))
+```
+
+**Output:**
+
+(1, 29)
 
 For more examples see [Examples](https://github.com/roshaan555/pynumsys/blob/main/Examples "Examples of funcions of pynumsys").
 
