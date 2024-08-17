@@ -308,6 +308,178 @@ b = "150"
 print(oct_add(a, b, output="hexa"))
 ```
 
+## Octal Subtraction:
+It is a function which returns subtraction of two octal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter for getting output
+in another number systems, by defualt the output is in octal.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_sub(a, b))
+```
+
+**Output in octal:**
+
+013
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_sub(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_sub(a, b, output="decimal"))
+```
+
+**Output in hexadecimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_sub(a, b, output="hexa"))
+```
+
+## Octal Multiplication:
+It is a function which returns multiplication of two octal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter if for getting output
+in another number systems by defualt the output is in octal.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_mul(a, b))
+```
+
+**Output in octal:**
+
+2EB8
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_mul(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_mul(a, b, output="decimal"))
+```
+
+**Output in hexadecimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_mul(a, b, output="hexa"))
+```
+
+## Octal Division:
+It is a function which returns division of two octal numbers. It has four parameters **a**, **b**, **output** and **quot**. **Output** parameter for getting output
+in another number systems by defualt the output is in octal and **quot** is a boolean parameter for getting quotient with remainder together in a tuple, naturally
+this functions returns remainder only due to its defualt **quot** value **False** but if you want quoteint with remainder you can pass it **quot=True**.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_div(a, b))
+```
+
+**Output in octal:**
+
+13
+
+**Output in binary:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, output="binary"))
+```
+
+**Output in decimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, output="decimal"))
+```
+
+**Output in hexadecimal:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, output="hexa"))
+```
+
+**With quot=True:**
+
+```py
+import pynumsys as pns
+
+a = "163"
+b = "150"
+
+print(oct_add(a, b, quot=True))
+```
+
+**Output:**
+
+(1, 13)
+
 For more examples see [Examples](https://github.com/roshaan555/pynumsys/blob/main/Examples "Examples of funcions of pynumsys").
 
 
