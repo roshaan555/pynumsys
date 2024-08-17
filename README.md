@@ -440,7 +440,7 @@ import pynumsys as pns
 a = "163"
 b = "150"
 
-print(oct_add(a, b, output="binary"))
+print(oct_div(a, b, output="binary"))
 ```
 
 **Output in decimal:**
@@ -451,7 +451,7 @@ import pynumsys as pns
 a = "163"
 b = "150"
 
-print(oct_add(a, b, output="decimal"))
+print(oct_div(a, b, output="decimal"))
 ```
 
 **Output in hexadecimal:**
@@ -462,7 +462,7 @@ import pynumsys as pns
 a = "163"
 b = "150"
 
-print(oct_add(a, b, output="hexa"))
+print(oct_div(a, b, output="hexa"))
 ```
 
 **With quot=True:**
@@ -473,7 +473,7 @@ import pynumsys as pns
 a = "163"
 b = "150"
 
-print(oct_add(a, b, quot=True))
+print(oct_div(a, b, quot=True))
 ```
 
 **Output:**
