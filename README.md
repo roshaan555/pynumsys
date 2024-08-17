@@ -70,6 +70,8 @@ print(bin_to_hex(bin_str))
 
 73
 
+# Binary Operations:
+
 ## Binary Addition:
 It is a function which returns addition of two binary numbers.
 
@@ -255,6 +257,8 @@ print(oct_to_hex(bin_str))
 **Output:**
 
 73
+
+# Octal Operations:
 
 ## Octal Addition:
 It is a function which returns addition of two octal numbers. It has three parameters **a**, **b** and **output**. **Output** parameter if for getting output
