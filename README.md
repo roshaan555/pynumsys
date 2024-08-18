@@ -780,6 +780,131 @@ print(hex_div(a, b, quot=True))
 
 (1, 29)
 
+# Complementing Number Systems:
+**Binary Complementing:**
+
+In a complement number system, a number is represented in an alternative way in a fixed-radix number system. In this system, positive integers are represented in their usual form, but with at least one leading zero. Negative numbers are represented by the complement of the corresponding number.
+
+In a complement number system, a number is represented in an alternative way in a fixed-radix number system. In this system, positive integers are represented in their usual form, but with at least one leading zero. Negative numbers are represented by the complement of the corresponding number.
+
+**Hexadecimal Complementing**
+
+Complements can also be applied to hexadecimal number systems, these includes: **15's Complement** and **16's Complement**
+
+## Binary Complementing:
+
+**2's Complement:**
+
+Two's complement is the most common method of representing signed (positive, negative, and zero) integers on computers, and more generally, fixed point binary values. Two's complement uses the binary digit with the greatest value as the sign to indicate whether the binary number is positive or negative; when the most significant bit is 1 the number is signed as negative and when the most significant bit is 0 the number is signed as positive. As a result, non-negative numbers are represented as themselves: 6 is 0110, zero is 0000, and -6 is 1010 (~6 + 1). Note that while the number of binary bits is fixed throughout a computation it is otherwise arbitrary.
+
+This package or library calculates **2's complement** using a function **twos_comp(binary_str, bit_length)**. **binary_str** is for binary string input and **bit_length** is length of bits, by default the bit length is 8 bits.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+bin_str = "1110011"
+
+print(twos_comp(bin_str))
+```
+
+**Output**
+
+10001101
+
+**bit length = 12**
+
+```py
+import pynumsys as pns
+
+bin_str = "1110011"
+bits = 12
+
+print(twos_comp(bin_str, bits))
+```
+
+**Output:**
+
+111110001101
+
+**1's Complement:**
+
+One's complement is the value of a binary number that is obtained by inverting all the bits in its binary representation. This means that 0s are swapped for 1s and vice versa. One's complement can also be used to find the one's complement of a negative number. To do this, invert all the digits in the binary number.
+
+This package or library calculates **1's complement** using a function **ones_comp(binary_str, bit_length)**. **binary_str** is for binary string input and **bit_length** is length of bits, by default the bit length is 8 bits.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+bin_str = "1110011"
+
+print(ones_comp(bin_str))
+```
+
+**Output**
+
+10001101
+
+**bit length = 12**
+
+```py
+import pynumsys as pns
+
+bin_str = "1110011"
+bits = 12
+
+print(ones_comp(bin_str, bits))
+```
+
+**Output:**
+
+111110001101
+
+## Hexadecimal Complementing:
+
+**15's Complement:**
+
+15's complement of a number is obtained by subtracting all bits from FFFF.
+
+This package or library calculates **15's complement** using a function **fifteens_complement(hex_num)**. **hex_num** is for hexadecimal string input.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+hex_str = "73"
+
+print(fifteens_complement(hex_str))
+```
+
+**Output:**
+
+8C
+
+**16's Complement:**
+
+16's complement of a number is obtained by subtracting all bits from FFFF and then adding 1 to obtained number.
+
+This package or library calculates **16's complement** using a function **sixteens_complement(hex_num)**. **hex_num** is for hexadecimal string input.
+
+**Example:**
+
+```py
+import pynumsys as pns
+
+hex_str = "73"
+
+print(sixteens_complement(hex_str))
+```
+
+**Output:**
+
+8D
+
 For more examples see [Examples](https://github.com/roshaan555/pynumsys/blob/main/Examples "Examples of funcions of pynumsys").
 
 
